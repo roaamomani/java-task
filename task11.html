@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getUniqueValues(array) {
+    let uniqueArray = array.filter((value, index, self) => {
+        return self.indexOf(value) === index;
+    });
+
+    return uniqueArray;
+}
+
+
+let array = [1, 2, 2, 3, 4, 4, 5];
+let uniqueValues = getUniqueValues(array);
+console.log(uniqueValues); // Output: [1, 2, 3, 4, 5]
+
+    </script>
+</body>
+</html>

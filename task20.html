@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let arrayOfNumbers = [10, 5, 7, 12, 3, 9];
+
+let sum = arrayOfNumbers.reduce((acc, num) => acc + num, 0);
+let average = sum / arrayOfNumbers.length;
+
+let filteredNumbers = arrayOfNumbers.filter(num => num > average);
+
+console.log(filteredNumbers);
+
+    </script>
+</body>
+</html>
